@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Min webbsida</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #d193bd;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: rgb(226, 195, 217);
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<div style="background:rgb(247, 245, 246);padding:5px">
+  <h4 style="text-align:center">Ändra strl på din browser för responsiv effekt.</h4>
+</div>
+
+<div class="header">
+  <h1>Min webbsida</h1>
+  <p>I <b>en</b> process</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Länk 1</a>
+  <a href="#">Länk 2</a>
+  <a href="#">Länk 3</a>
+  <a href="#">Länk 4</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Om mig</h2>
+    <h5>Ett foto på mig:</h5>
+    <div class="fakeimg" style="height:200px;">En bild</div>
+    <h3>Mer Text</h3>
+    <div class="fakeimg" style="height:60px;">Bild</div><br>
+    <div class="fakeimg" style="height:60px;">Bild</div><br>
+    <div class="fakeimg" style="height:60px;">Bild</div>
+  </div>
+  <div class="main">
+    <h2>Heading 2</h2>
+    <h5>Titel</h5>
+    <div class="fakeimg" style="height:200px;">Bild</div>
+    <p>Lite text</p>
+    <br>
+    <h2>Heading</h2>
+    <h5>Titel</h5>
+    <div class="fakeimg" style="height:200px;">Bild</div>
+    <p>Lite mer text</p>
+    </p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Copyright by Josefine Weinefalk 2020</h2>
+</div>
+
+</body>
+</html>
